@@ -18,6 +18,6 @@ function calculatesFarePrice(start, destination) {
         return (Math.abs((start - destination) * 264) - 400) * .02;
     }
     else if (Math.abs((start - destination) *264) < 400) {
-        return 0
+        return "give customers a free sample"
     }
 }

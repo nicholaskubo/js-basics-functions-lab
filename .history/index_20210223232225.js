@@ -11,13 +11,7 @@ function calculatesFarePrice(start, destination) {
     if (((start - destination) * 264) > 2500) {
         return "cannot travel that far";
     }
-    else if (Math.abs((start - destination) * 264) > 2000) {
+    else if (((start - destination) * 264) > 2000) {
         return 25;
-    }
-    else if (Math.abs((start - destination) * 264) > 400) {
-        return (Math.abs((start - destination) * 264) - 400) * .02;
-    }
-    else if (Math.abs((start - destination) *264) < 400) {
-        return 0
     }
 }
